@@ -1,6 +1,4 @@
-const h1Text = document.querySelector("h1");
 const timerText = document.querySelector("#timer");
-
 const iniciarButton = document.querySelector("#iniciarButton");
 const pausarButton = document.querySelector("#pausarButton");
 const zerarButton = document.querySelector("#zerarButton");
@@ -10,6 +8,7 @@ let timer;
 
 /* INICIAR */
 const iniciarTempo = (e) => {
+  clearInterval(timer);
   timer = setInterval(aumentarMs, 1000);
   console.log("Iniciou");
 };

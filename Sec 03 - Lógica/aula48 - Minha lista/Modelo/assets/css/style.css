@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  /* --primary-color: rgb(18, 61, 74);
+  --primary-color-darker: rgb(8, 32, 37); */
+  --primary-color: rgb(56, 71, 75);
+  --primary-color-darker: rgb(30, 36, 37);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(180deg, var(--primary-color), var(--primary-color-darker)); 
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+}
+
+.container {
+  width: 440px;
+
+  background-color: #fff;
+  border-radius: 0.25rem;
+  padding: 1.5rem 2rem;
+
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.container h1 {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+form input, 
+form label, 
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: var(--primary-color-darker);
+}
+
+.input-container {
+  display: flex;
+  gap: 0.625rem;
+
+  margin: 0;
+  margin-bottom: 2.5rem;
+}
+
+.input-container input {
+  width: 100%;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 0.25rem;
+}
+
+.btnTarefa {
+  border: none;
+  padding: 0.5rem;
+
+  background-color: rgb(240, 182, 23);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btnTarefa:hover {
+  background-color: rgb(255, 203, 60);
+}
+
+.btnTarefa i {
+  font-size: 1.25rem;
+}
+
+.inputTarefa {
+  font-size: 1.3rem;
+  padding: 0.25rem 1rem;
+}
+
+.tarefas {
+  padding: 0;
+}
+
+.tarefas li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.tarefas li::before {
+  position: absolute;
+  content: "🚀 ";
+  width: 30px;
+  height: 30px;
+
+  left: -30px;
+}
+
+.tarefas li button {
+  border: none;
+  padding: 0.5rem;
+
+  /* background-color: rgb(255, 103, 65); */
+  background-color: #e10221;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.tarefas li button i {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.tarefas li button:hover {
+  /* background-color: rgb(255, 140, 111); */
+  background-color: #ff0534;
+}

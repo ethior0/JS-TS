@@ -1,12 +1,12 @@
 // Declaração de função (Function hoisting)
-// Permitea chamada da função antes da inicialziação dela
+// Permite a chamada da função antes da inicialziação dela
 falaOi();
 function falaOi() {
   console.log("Oie");
 }
 
 // First-class objects (Objetos de primeira classe)
-// Pode tratar funções como dados
+// Podem ser tratadas como dados
 // Function expression
 const souUmDado = function() {
   console.log("Sou um dado.");
@@ -20,7 +20,7 @@ function executaFuncao(funcao) {
 executaFuncao(souUmDado); // função sendo tratata como dado
 
 // Arrow function
-const funcaoArrow = () => {
+const funcaoArrow = () => {  
   console.log("Sou uma arrow function");
 }
 funcaoArrow();

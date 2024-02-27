@@ -34,6 +34,9 @@ function criaPessoa(nome, sobrenome, idade) { // factory
 const pessoinha1 = criaPessoa('Luiz', 'Otávio', 25);
 const pessoinha2 = criaPessoa('Thiago', 'Moreira', 18);
 const pessoinha3 = criaPessoa('Vinicius', 'Pog', 15);
+const vetorTeste = [pessoinha1, pessoinha2, pessoinha3];
 console.log(pessoinha1)
 console.log(pessoinha2)
 console.log(pessoinha3)
+
+console.log(vetorTeste[0].nome);

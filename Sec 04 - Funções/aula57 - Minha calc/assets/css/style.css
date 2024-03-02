@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  /* --primary-color: rgb(18, 61, 74);
+  --primary-color-darker: rgb(8, 32, 37); */
+  --primary-color: rgb(56, 71, 75);
+  --primary-color-darker: rgb(30, 36, 37);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(180deg, var(--primary-color), var(--primary-color-darker)); 
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.container h1 {
+  background: -webkit-linear-gradient(180deg, #4974b0, #1a1c36);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form input, 
+form label, 
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: var(--primary-color-darker);
+}
+
+table {
+  width: 100%;
+}
+
+.display {
+  width: 100%;
+  color: grey;
+  font-size: 2rem;
+  text-align: right;
+
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(145, 145, 145);
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  border: none;
+  border-radius: 0.125rem;
+  background-color: rgb(164, 201, 224);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(185, 215, 235);
+}
+
+.orange {
+  background-color: rgb(240, 170, 48);
+}
+
+.orange:hover {
+  background-color: rgb(255, 194, 88);
+}
+
+.blue {
+  background-color: rgb(114, 165, 194);
+}
+
+.blue:hover {
+  background-color: rgb(129, 177, 206);
+}

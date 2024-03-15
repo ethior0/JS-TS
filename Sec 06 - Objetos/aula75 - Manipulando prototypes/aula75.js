@@ -21,6 +21,8 @@ function Produto(nome, preco) {
   this.preco = preco;
 }
 
+console.dir(Produto);
+
 Produto.prototype.desconto = function(percentual) {
   this.preco = this.preco - (this.preco * (percentual / 100));
 };

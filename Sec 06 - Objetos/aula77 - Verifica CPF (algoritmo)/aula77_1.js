@@ -5,7 +5,7 @@
 70 0  40 28 48 20 16 15 0 = 237
 
 11 - (237 % 11) = 5 (Primeiro dígito)
-Se o dígito for maior que 9, consderamos = 0
+Se o dígito for maior que 9, consideramos = 0
 
 7x 0x 5x 4x 8x 4x 4x 5x 0x 5x
 11 10 9  8  7  6  5  4  3  2
@@ -27,7 +27,7 @@ for (let i = 10, j = 0; i >= 2; i--, j++) {
   decimoDigito += i * digito;
 }
 decimoDigito = 11 - (decimoDigito % 11);
-cpfFormNoveDig += decimoDigito;
+cpfFormNoveDig += decimoDigito > 9 ? 0 : decimoDigito;
 
 // Segundo dígito
 let decimoPrimDigito = 0;
@@ -36,7 +36,7 @@ for (let i = 11, j = 0; i >= 2; i--, j++) {
   decimoPrimDigito += i * digito;
 }
 decimoPrimDigito = 11 - (decimoPrimDigito % 11)
-cpfFormNoveDig += decimoPrimDigito;
+cpfFormNoveDig += decimoPrimDigito > 9 ? 0 : decimoPrimDigito;
 
 // Print
 console.log(cpfFormNoveDig);

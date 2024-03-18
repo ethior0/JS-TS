@@ -28,6 +28,9 @@ cpfArray.filter( (v, i) => {
 
 digito1 = 11 - (digito1 % 11);
 digito2 = 11 - (digito2 % 11);
+digito1 = digito1 > 9 ? 0 : digito1;
+digito2 = digito2 > 9 ? 0 : digito2;
+
 const newCpf = cpfLimpo.slice(0, -2) + digito1 + digito2;
 
 console.log(cpfArray.join("") === newCpf);
